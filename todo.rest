@@ -1,0 +1,22 @@
+GET http://localhost:3000/todo HTTP/1.1
+
+###
+POST http://localhost:3000/todo HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "submit task",
+    "description": "trying to meet with the deadline for the task"
+}
+
+###
+PUT http://localhost:3000/todo/636ef0a5dd02a28e91e6b908 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "submit task for the zuri people",
+    "description": "trying to meet for the task"
+}
+
+###
+DELETE http://localhost:3000/todo/636ef488675acf1f3adf6e10 HTTP/1.1
