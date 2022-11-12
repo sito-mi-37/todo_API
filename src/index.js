@@ -4,7 +4,7 @@ const router = require('./routes/todo-route')
 
 const connect = require('./config/database')
 
-connect("mongodb+srv://sito:sito123456@cluster0.0pjte.mongodb.net/?retryWrites=true&w=majority")
+connect(process.env.MONGO_URI)
 
 
 const app = express()
